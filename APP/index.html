@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+
+
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+<!-- 	<script type="text/javascript" src="site/controllers/workCtrl.js"></script>
+	<script type="text/javascript" src="site/controllers/aboutCtrl.js"></script>
+	<script type="text/javascript" src="site/controllers/projectCtrl.js"></script> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>made-by-shway</title>
+
+</head>
+
+<body ng-app="portfolioApp">
+	<div class="mainbox">
+
+		<nav>
+			<div class="titlebox">
+				<h2 class="titleshway"><a href="/#/">shway</a></h2>
+			</div>
+			<div class="menu">
+				<h3 class="menulist">
+				<a href="http://54.69.52.6/#/"> BLOG </a>
+				</h3>
+				<h3 class="menulist">
+				<a ui-sref="about" ui-sref-active="activeState"> ABOUT </a>
+				</h3>
+				<h3 class="menulist">
+				<a ui-sref="projects" ui-sref-active="activeState"> PROJECTS </a>
+				</h3>
+			</div>
+		</nav>
+
+		<div class="projectbox">
+			<ui-view autoscroll="false"></ui-view>
+		</div>
+
+	</div>
+
+
+
+	
+
+</body>
+</html>
