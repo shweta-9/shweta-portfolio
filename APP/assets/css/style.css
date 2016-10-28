@@ -15,7 +15,7 @@
 }
 
 body {
-	height: 100%;
+/*	height: 100%;*/
 /*	background-color: #EFBB9C;*/
 /*	background-color: #ff6128;*/
 	background-color: rgba(255, 80, 40, 0.82);
@@ -28,9 +28,9 @@ body {
 
 .mainbox {
 	width: 70vw;
-	height: 90vh;
+/*	height: 90vh;*/
 	margin: 0 auto;
-	height:2000px;
+/*	height: 2000px;*/
 }
 
 /*NAVIGATION BAR*/
@@ -66,6 +66,8 @@ nav h2 {
 
 .proj:hover {
 	background-color: white;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
 .subtitle {
@@ -165,12 +167,16 @@ a {
 }
 
 .viewproj {
-	width: 75%;
-	margin: 2vw 8vw;
+	margin-top: 15px;
+}
+
+.viewInfo {
+	margin-top: 15px;
+	height: 72vh;
 }
 
 .details {
-	width: 20%;
+	width: 17%;
 	display: inline-block;
 	line-height: 30%;
 }
@@ -181,11 +187,11 @@ a {
 
 .details p {
 	margin-top: -10px;
-	line-height: 16px;
+	line-height: 1rem;
 }
 
 .written {
-	width: 78%;
+	width: 80%;
 	display: inline-block;
 	float: right;
 }
@@ -223,7 +229,7 @@ a {
 .info {
 	font-family: 'Rufina', serif;
 	font-size: 0.8rem;
-	line-height: 0.8rem;
+	line-height: 1rem;
 }
 
 .infotype, .info {
@@ -292,6 +298,7 @@ a {
 }
 
 .introshway a:hover {
+	color: white;
 	border-bottom: 0.05em dotted white;
 }
 
@@ -312,33 +319,226 @@ a {
 	color: white;
 }
 
-/*div {
-	border: 1px white solid;
-}*/
+
+.infotype a:hover {
+	color: white;
+}
+
+.arrow {
+	height: 2%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 90px;
+    left: 49vw;
+    fill: white;
+}
+
+
+
+.linefooter {
+	background-color: black;
+    height: 1px;
+    width: 5%;
+    display: block;
+    margin: 10px auto;
+}
+#main {
+	display: block;
+}
+
+#main p {
+	font-family: 'Rufina', serif;
+	font-size: 0.8rem;
+	line-height: 1rem;
+	text-align: center;
+}
+
+margin:0;padding:0;} 
+
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {
+	height: 100%;
+}
+
+#wrap {
+	min-height: 100%;
+}
+
+#main {
+	overflow:auto;
+	margin-top: 60px;
+    margin-bottom: 30px;
+    display: block;
+}  /* must be same height as the footer */
+
+
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+
+/*div { border: 1px white solid; }*/
+
+
+
+
 
 /*  MEDIUM, LESS THAN 768 PIXELS */
 @media only screen and (max-width:768px) {
 	html {
-		font-size: 80%;
+		font-size: 90%;
 	}
 
 	body {
 		background-color: lightblue;
 	}
+	
+	.thumb {
+		width: 100%;
+	}
 
+	.infobox {
+		display: none;
+	}
+	
+	.introshway {
+		font-size: 2rem;
+		line-height: 2.7rem;
+	}
+
+	.social {
+		font-size: 70%;
+		line-height: 0%;
+	}
+
+/*	.thumb:hover {
+		opacity: 0.5;
+	}
+
+	.proj:hover {
+		background-color: #2100d8;
+	}
+*/
 }
 
 
 /*SMALL, LESS THAN 319 PIXELS */
-@media only screen and (max-width:319px) {
-	
+@media only screen and (max-width:590px) {
+
+	html {
+		font-size: 80%;
+	}
+
+	.introshway {
+		font-size: 1.8rem;
+    	line-height: 2.5rem;
+	}
+
+
 	body {
 		background-color: lavender;
 	}
 
 }
 
+/*SMALL, LESS THAN 319 PIXELS */
+@media only screen and (max-width:470px) {
+	
+	html {
+		font-size: 78%;
+	}
+
+	.introshway {
+		font-size: 1.6rem;
+    	line-height: 2.3rem;
+	}
+
+	body {
+		background-color: lightgrey;
+	}
+
+	.thumb {
+		width: 500px;
+	}
+
+	.project-title {
+		font-size: 6.5rem;
+		line-height: 7rem;
+	}
+
+	.social {
+		letter-spacing: -0.5px;
+	}
+	
+	.written {
+		width: 78%;
+	}
+
+	.lineProj {
+		width: 56%;
+	}
+}
 
 
+@media only screen and (max-width:375px) {
+	nav {
+		font-size: 100%;
+	}
 
+	.introshway {
+		font-size: 1.4rem;
+    	line-height: 2rem;
+	}
+
+	.project-title {
+		font-size: 5rem;
+		line-height: 5.5rem;
+	}
+
+/*	.written {
+		width: 75%;
+	}*/
+
+	.lineProj {
+		width: 50%;
+	}
+	
+	.details {
+		display: block;
+		width: 100%;
+	}
+
+	.infotype, .info {
+		font-size: 100%;
+	}
+	
+	.details p {
+		line-height: 1.3rem;
+	}
+
+	.social {
+		display: inline-block;
+		width: 32%;
+		text-align: left;
+	}
+	
+	.last {
+		float: right;
+	}
+	
+
+	.written {
+		display: block;
+		width: 100%;
+	}
+}
 
