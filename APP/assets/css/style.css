@@ -41,6 +41,7 @@ nav {
 	display: inline-block;
 	width: 70%; /*for IE 8*/
 	width: 70vw;
+    z-index: 1000;
 }
 
 nav h2 {
@@ -141,10 +142,11 @@ a {
 .subtitle {
 	font-family: Cocogoose;
 	font-size: 0.8rem;
+	margin-top: 40px;
 }
 
 .projectbox {
-	margin-top:90px;
+	margin-top: 90px;
 }
 
 .projects {
@@ -466,8 +468,8 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 		background-color: lightgrey;
 	}
 
-	.thumb {
-		width: 500px;
+	.thumbnail img {
+		overflow: hidden;
 	}
 
 	.project-title {
@@ -534,11 +536,14 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 	.last {
 		float: right;
 	}
-	
 
 	.written {
 		display: block;
 		width: 100%;
+	}
+
+	body {
+		background-color: darkgrey;
 	}
 }
 

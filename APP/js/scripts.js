@@ -37,6 +37,10 @@ $( document ).ready(function() {
 	//     $(".skillsets").hide("slow");
 	// })
 
+	// $(".image-wrapper").mouseenter(function() {
+	// 	$(this).toggleClass("deactive");
+	// });
+
 
 	// thumbnail hover
 	// $('.thumb').on({

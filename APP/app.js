@@ -32,15 +32,36 @@
 	  				}
 	  			})
 
-				.state('one', {
-					url: "/one",
-	  				templateUrl: "site/projects/one.html", 				
+				.state('this-is-not-a-toy', {
+					url: "/this-is-not-a-toy",
+	  				templateUrl: "site/projects/this-is-not-a-toy.html", 				
 				})
 
-				.state('two', {
-					url: "/two",
-	  				templateUrl: "site/projects/two.html", 				
-				});	
+				.state('dcrypt-blog', {
+					url: "/dcrypt-blog",
+	  				templateUrl: "site/projects/dcrypt-blog.html", 				
+				})
+
+				.state('brassaii-catering-brochure', {
+					url: "/brassaii-catering-brochure",
+	  				templateUrl: "site/projects/brassaii-catering-brochure.html", 				
+				})
+
+				.state('jersey-milk-chocolate', {
+					url: "/jersey-milk-chocolate",
+	  				templateUrl: "site/projects/jersey-milk-chocolate.html", 				
+				})				
+
+				.state('drowned citizens', {
+					url: "/drowned-citizens",
+	  				templateUrl: "site/projects/drowned-citizens.html", 				
+				})
+
+				.state('printmaking', {
+					url: "/printmaking",
+	  				templateUrl: "site/projects/printmaking.html", 				
+				});
+
 
 				$urlRouterProvider.otherwise("/");
 		})
