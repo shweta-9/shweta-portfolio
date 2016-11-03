@@ -549,7 +549,7 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 
 	.introshway {
 		font-size: 1.4rem;
-    	line-height: 2rem;
+    	line-height: 1.9rem;
 	}
 
 	.project-title {
@@ -601,5 +601,10 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 /*	body {
 		background-color: darkgrey;
 	}*/
+
+	.cit {
+		font-size: 3rem;
+		line-height: 3.5rem;
+	}
 }
 
