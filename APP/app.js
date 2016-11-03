@@ -52,7 +52,7 @@
 	  				templateUrl: "site/projects/jersey-milk-chocolate.html", 				
 				})				
 
-				.state('drowned citizens', {
+				.state('drowned-citizens', {
 					url: "/drowned-citizens",
 	  				templateUrl: "site/projects/drowned-citizens.html", 				
 				})

@@ -31,6 +31,7 @@ $( document ).ready(function() {
             $('.project-title, .slogan').css({'opacity':(( 180-scroll )/100)+0.1});
     });
 
+
 	// $(".skillname").hover(function(){
 	//     $(".skillsets").show("slow");
 	//     }, function(){
