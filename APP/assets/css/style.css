@@ -358,10 +358,6 @@ picture source {
     display: block;
     margin: 10px auto;
 }
-#main {
-	display: block;
-	width: 100vw;
-}
 
 #main p {
 	font-family: 'Rufina', serif;
@@ -389,6 +385,7 @@ html, body {
 	margin-top: 60px;
     margin-bottom: 30px;
     display: block;
+    width: 97vw;
 }  /* must be same height as the footer */
 
 
