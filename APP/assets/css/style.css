@@ -360,6 +360,7 @@ picture source {
 }
 #main {
 	display: block;
+	width: 100vw;
 }
 
 #main p {
@@ -590,6 +591,11 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 	.written {
 		display: block;
 		width: 100%;
+	}
+
+	#main p {
+		font-size: 1rem;
+		line-height: 1.2rem;
 	}
 
 /*	body {
