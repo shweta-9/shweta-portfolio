@@ -590,6 +590,10 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 		width: 100%;
 	}
 
+	.written p {
+		font-size: 1rem;
+	}
+
 	#main p {
 		font-size: 1rem;
 		line-height: 1.2rem;
