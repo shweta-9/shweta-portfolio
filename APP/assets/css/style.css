@@ -558,6 +558,13 @@ html, body {
 		position: relative;
 		right: 40%;
 	}
+
+	.thesis img {
+		height: 100%;
+		width: auto;
+		position: relative;
+		right: 20%;
+	}
 }
 
 
