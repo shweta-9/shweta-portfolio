@@ -236,7 +236,7 @@ a {
 .infotype {
 	font-family: Cocogoose;
 	font-size: 0.8rem;
-	margin: 13px 0px;
+	margin: 15px 0px;
 }
 
 .info {
@@ -510,7 +510,19 @@ html, body {
 
 /*SMALL, LESS THAN 319 PIXELS */
 @media only screen and (max-width:470px) {
-	
+
+	nav {
+		width: 80vw;
+	}
+
+	.mainbox {
+		width: 80vw;
+	}	
+
+	.project-img {
+		width: 80vw;
+	}
+
 	html {
 		font-size: 78%;
 	}

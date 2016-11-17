@@ -2,9 +2,9 @@ $( document ).ready(function() {
 	
 	//menu animations
 	$(".menulist").hover(function(){
-	    $(this).addClass("animated infinite headShake");
+	    $(this).addClass("animated headShake");
 	    }, function(){
-	    $(this).removeClass("animated infinite headShake");
+	    $(this).removeClass("animated headShake");
 	})
 	//image fade out scroll
 	$(window).on("load",function() {
