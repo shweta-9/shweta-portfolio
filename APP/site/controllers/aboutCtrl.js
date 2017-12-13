@@ -1,10 +1,10 @@
 (function() {
 	angular
-		.module("portfolioApp")
+		.module("portfolio2App")
 		.controller('aboutCtrl', aboutCtrl);
 
 		function aboutCtrl(){
-			this.title = "About Me";
+			this.title = "About";
 			console.log("my biography")
 		}
 })();

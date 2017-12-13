@@ -1,10 +1,10 @@
 (function() {
 	angular
-		.module("portfolioApp")
+		.module("portfolio2App")
 		.controller("workCtrl", workCtrl);
 
 		function workCtrl(){
-			this.title = "Selected Work";
+			this.title = "Work";
 			console.log("my work")
 		}
 })();

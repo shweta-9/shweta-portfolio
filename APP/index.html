@@ -2,66 +2,89 @@
 <html>
 
 <head>
-	<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+		<!-- Google Analytics -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-86851403-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	<!-- End Google Analytics -->
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-	<link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
-	
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
-
-
-	<!-- SCRIPTS -->
 	<script type="text/javascript" src="app.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<script src="js/picturefill.min.js" async></script>
-
-	<title>s h w e t a</title>
-	
+	<title>shway</title>
+	<meta name="title" content="Shweta Sharma's Portfolio">
+	<meta name="description" content="View Shway's online portfolio featuring a range of graphic design work in both print and digital.">
 </head>
 
-<body ng-app="portfolioApp">
+<body ng-app="portfolio2App">
+
 	<div class="mainbox">
 
+	<!-- NAV BAR -->
 		<nav>
-			<div class="titlebox">
-				<h2 class="titleshway"><a href="/#/">shway</a></h2>
-			</div>
-			<div class="menu">
-				<h3 class="menulist">
-				<a href="http://dcrypt.net"> BLOG </a>
-				</h3>
-				<h3 class="menulist">
-				<a ui-sref="about" ui-sref-active="activeState"> ABOUT </a>
-				</h3>
-				<h3 class="menulist">
-				<a ui-sref="projects" ui-sref-active="activeState"> PROJECTS </a>
-				</h3>
+			<div class="nav-title"><a href="shwayda.com">
+				<img src="assets/img/logo2.png"></a></div>
+			<!-- <div class="nav-logo">
+				<img src="assets/img/spin1.gif">
+			</div> -->
+			<div class="nav-icon">
+				<button style="text-align:right; padding-right: 0px;" id="myBtn"><img src="assets/img/navigation.svg"></button>
 			</div>
 		</nav>
-
-		<div class="projectbox">
-			<ui-view autoscroll="false"></ui-view>
-		</div>
-
 	</div>
 
+	<!-- MODAL -->
+	<div id="myModal" class="modal">
 
-	
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <div class="nav-popup">
+			<div class="nav-list">
+				<span class="close">&times;</span><br>
+				<a class="link" ui-sref="work">work</a><br>
+				<a  class="link" ui-sref="about">about</a><br>
+				<!-- <a class="link"  href="http://stories.shwayda.com">STORIES</a><br> -->
+				<a class="link" ui-sref="stories">stories</a><br>
+				<a class="link"  href="http://thoughts.shwayda.com">thoughts</a><br>
+				<a  class="link" href="mailto:hello@shwayda.com">contact</a><br>
+				<!-- <span style="font-family: Gravity-Light; font-size: 4em; line-height: 40px;">~</span> -->
+			</div>
+		</div>
+	  </div>
+	</div>
+
+	<div class="contentbox">
+		<ui-view autoscroll="false"></ui-view>
+	</div>
+
 	<div id="wrap">
 		<div id="main">
 			<div class="linefooter"></div>
-			<p>made by shway &nbsp;•&nbsp; <a style="border-bottom: 0.05em dotted white;" href="mailto:shwayduh@gmail.com">get in touch</a></p>
+			<br>
+			<p style="font-family: Gravity-Light; font-size: 0.78rem; color: white;letter-spacing: 0.1rem;">
+				<a style="color: white; text-decoration: none;" href="mailto:hello@shwayda.com">made &nbsp;•&nbsp; by &nbsp;•&nbsp; shway</a>
+				<br>
+				<br>
+				© 2018</p>
 		</div>
 	</div>
-	
 
-	
 
 </body>
+
+
 </html>
+

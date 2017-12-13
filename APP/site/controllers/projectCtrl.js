@@ -1,6 +1,6 @@
 (function() {
 	angular
-		.module("portfolioApp")
+		.module("portfolio2App")
 		.controller('projectCtrl', projectCtrl);
 
 		function projectCtrl(){
