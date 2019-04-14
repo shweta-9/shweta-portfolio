@@ -22,6 +22,10 @@
 	  				templateUrl: "site/partials/about.html",  				
 				})			
 
+				.state('contact', {
+					url: "/contact",
+	  				templateUrl: "site/partials/contact.html",  				
+				})
 
 				.state('this-is-not-a-toy', {
 					url: "/this-is-not-a-toy",
