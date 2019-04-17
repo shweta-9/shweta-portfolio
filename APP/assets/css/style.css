@@ -722,3 +722,10 @@ html, body {
 	display: inline-block; 
 	/*float: right;*/
 }
+
+
+@media only screen and (max-width:500px) {
+    under-construction {
+        font-size: 5em;
+    }
+}

@@ -9,12 +9,15 @@
 		
         
 			$stateProvider
-				.state("work", {
+				.state("construction", {
 					url: "/",
-					views : {
-						"" : { templateUrl: "site/partials/work.html" },
-						"projects@landing" : { templateUrl: "site/partials/work.html" },
-					}
+	  				templateUrl: "site/partials/construction.html",
+
+					// url: "/",
+					// views : {
+					// 	"" : { templateUrl: "site/partials/work.html" },
+					// 	"projects@landing" : { templateUrl: "site/partials/work.html" },
+					// }
 				})
 
 				.state('about', {
