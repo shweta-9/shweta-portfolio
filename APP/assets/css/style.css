@@ -207,6 +207,7 @@ a {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 	height: 72vh;
 >>>>>>> parent of 1f51381... s
@@ -225,6 +226,23 @@ a {
     font-size: 1em;
     margin: 0 auto;
     font-family: Dark-Bold;
+=======
+	height: 72vh;
+}
+
+.details {
+    width: 90vw;
+    display: block;
+    /* line-height: 0%; */
+    margin: 20px auto;
+    text-align: center;
+}
+
+.details h5 {
+    font-family: Gravity-Regular;
+/*    color: #D0865F;*/
+	color: black;
+>>>>>>> parent of 1f51381... s
     letter-spacing: 1.4px;
     display: inline;
 }
