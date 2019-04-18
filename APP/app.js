@@ -9,15 +9,12 @@
 		
         
 			$stateProvider
-				.state("construction", {
+				.state("work", {
 					url: "/",
-	  				templateUrl: "site/partials/construction.html",
-
-					// url: "/",
-					// views : {
-					// 	"" : { templateUrl: "site/partials/work.html" },
-					// 	"projects@landing" : { templateUrl: "site/partials/work.html" },
-					// }
+					views : {
+						"" : { templateUrl: "site/partials/work.html" },
+						"projects@landing" : { templateUrl: "site/partials/work.html" },
+					}
 				})
 
 				.state('about', {
@@ -25,10 +22,6 @@
 	  				templateUrl: "site/partials/about.html",  				
 				})			
 
-				.state('contact', {
-					url: "/contact",
-	  				templateUrl: "site/partials/contact.html",  				
-				})
 
 				.state('this-is-not-a-toy', {
 					url: "/this-is-not-a-toy",

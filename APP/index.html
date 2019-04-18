@@ -35,54 +35,57 @@
 
 	<!-- NAV BAR -->
 		<nav>
-			<div class="nav-title">
-				<a href="http://www.shwayda.com">
-				<img src="assets/img/logo2.png"></a>
-				<div class="nav-menu">
-					<a class="hover" ui-sref="journal" href="/journal">JOURNAL</a>
-				</div>
-				<div class="nav-menu">
-					<a class="hover" ui-sref="contact" href="/contact">CONTACT</a>
-				</div>
-				<div class="nav-menu">
-					<a class="hover" ui-sref="about" href="/about">ABOUT</a>
-				</div>
-				<div class="nav-menu">
-					<a class="hover" ui-sref="work" href="/work">WORK</a>
-				</div>
+			<div class="nav-title"><a href="http://www.shwayda.com">
+				<img src="assets/img/logo2.png"></a></div>
+			<!-- <div class="nav-logo">
+				<img src="assets/img/spin1.gif">
+			</div> -->
+			<div class="nav-icon">
+				<button style="text-align:right; padding-right: 0px;" id="myBtn"><img src="assets/img/navigation.svg"></button>
 			</div>
 		</nav>
+	</div>
 
-<!-- 		<div class="container">
-			<div class="intro-quote">
-				<p>My mission in life is not merely to survive, but to thrive and to do so with some passion, some compassion, 
-		some humour and some style. –Maya Angelou</p>
-			</div>
-		</div> -->
-	
-		<!-- UI VIEW -->
-		<div class="contentbox">
-			<ui-view autoscroll="false"></ui-view>
-		</div>
+	<!-- MODAL -->
+	<div id="myModal" class="modal">
 
-		<!-- FOOTER -->
-		<div id="wrap">
-			<div id="main" class="footer-info">
-				
-				<p style="text-align: left; float: left;display: block; font-size: 0.8em; line-height: 1.3em; font-weight: 100;">
-					647 760 7334 
-					<br>
-					<a class="hover";" href="mailto:hello@shwayda.com"> HELLO@SHWAYDA.COM</a>
-				</p>
-							
-				<p style="text-align: right; font-size: 0.8em;
-	    line-height: 1.3em; font-weight: 100;"> <br> 2019 © SHWAYDA.COM</p>
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <div class="nav-popup">
+			<div class="nav-list">
+				<span class="close">&times;</span><br>
+				<a class="link" ui-sref="work">work</a><br>
+				<a  class="link" ui-sref="about">about</a><br>
+				<!-- <a class="link"  href="http://stories.shwayda.com">STORIES</a><br> -->
+				<a class="link" ui-sref="stories">stories</a><br>
+				<a class="link"  href="http://thoughts.shwayda.com">thoughts</a><br>
+				<a  class="link" href="mailto:hello@shwayda.com">contact</a><br>
+				<!-- <span style="font-family: Gravity-Light; font-size: 4em; line-height: 40px;">~</span> -->
 			</div>
 		</div>
+	  </div>
+	</div>
+
+	<div class="contentbox">
+		<ui-view autoscroll="false"></ui-view>
+	</div>
+
+	<div id="wrap">
+		<div id="main">
+			<div class="linefooter"></div>
+			<br>
+			<p style="font-family: Gravity-Light; font-size: 0.78rem; color: white;letter-spacing: 0.1rem;">
+				<a style="color: white; text-decoration: none;" href="mailto:hello@shwayda.com">made &nbsp;•&nbsp; by &nbsp;•&nbsp; shway</a>
+				<br>
+				<br>
+				© 2018</p>
+		</div>
+	</div>
 
 
 </body>
 
 
 </html>
+
 
